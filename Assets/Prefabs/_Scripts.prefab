@@ -9,17 +9,28 @@ Prefab:
     m_Modifications: []
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 0}
+<<<<<<< HEAD
+  m_RootGameObject: {fileID: 1000010173765524}
+  m_IsPrefabParent: 1
+--- !u!1 &1000010173765524
+=======
   m_RootGameObject: {fileID: 1000013676691794}
   m_IsPrefabParent: 1
 --- !u!1 &1000013676691794
+>>>>>>> origin/Local-Changes
 GameObject:
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   serializedVersion: 4
   m_Component:
+<<<<<<< HEAD
+  - 4: {fileID: 4000014225441022}
+  - 114: {fileID: 114000013557360780}
+=======
   - 4: {fileID: 4000011339523560}
   - 114: {fileID: 114000014143063580}
+>>>>>>> origin/Local-Changes
   m_Layer: 0
   m_Name: _Scripts
   m_TagString: Untagged
@@ -27,12 +38,20 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
+<<<<<<< HEAD
+--- !u!4 &4000014225441022
+=======
 --- !u!4 &4000011339523560
+>>>>>>> origin/Local-Changes
 Transform:
   m_ObjectHideFlags: 1
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
+<<<<<<< HEAD
+  m_GameObject: {fileID: 1000010173765524}
+=======
   m_GameObject: {fileID: 1000013676691794}
+>>>>>>> origin/Local-Changes
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: -3.4876995, y: -0.028717995, z: 4.4788427}
   m_LocalScale: {x: 1, y: 1, z: 1}
@@ -40,12 +59,20 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 0
+<<<<<<< HEAD
+--- !u!114 &114000013557360780
+=======
 --- !u!114 &114000014143063580
+>>>>>>> origin/Local-Changes
 MonoBehaviour:
   m_ObjectHideFlags: 1
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
+<<<<<<< HEAD
+  m_GameObject: {fileID: 1000010173765524}
+=======
   m_GameObject: {fileID: 1000013676691794}
+>>>>>>> origin/Local-Changes
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 459118cff4a0099488fd0eb9370db910, type: 3}
@@ -53,10 +80,17 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   population: 1000
   availableJobs: 700
+<<<<<<< HEAD
+  averageIncome: 200
+  taxRate: 10
+  healthcareSpending: 100
+  educationSpending: 100
+=======
   averageIncome: 20000
   taxRate: 0
   healthcareSpending: 0
   educationSpending: 0
+>>>>>>> origin/Local-Changes
   taxSlider: {fileID: 0}
   taxlevel: {fileID: 0}
   healthSlider: {fileID: 0}
