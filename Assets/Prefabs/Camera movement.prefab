@@ -9,134 +9,76 @@ Prefab:
     m_Modifications: []
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 0}
-<<<<<<< HEAD
-  m_RootGameObject: {fileID: 1000010836614308}
+  m_RootGameObject: {fileID: 1000011715517220}
   m_IsPrefabParent: 1
---- !u!1 &1000010836614308
-=======
-  m_RootGameObject: {fileID: 1000012070797548}
-  m_IsPrefabParent: 1
---- !u!1 &1000010703697940
->>>>>>> origin/Local-Changes
+--- !u!1 &1000011715517220
 GameObject:
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   serializedVersion: 4
   m_Component:
-<<<<<<< HEAD
-  - 4: {fileID: 4000010105433428}
-  - 114: {fileID: 114000012194908948}
+  - 4: {fileID: 4000013301569044}
+  - 114: {fileID: 114000012020936646}
   m_Layer: 0
   m_Name: Camera movement
   m_TagString: Untagged
-=======
-  - 4: {fileID: 4000011505123966}
-  - 20: {fileID: 20000012920185382}
-  - 92: {fileID: 92000011028097960}
-  - 124: {fileID: 124000012225032920}
-  - 81: {fileID: 81000012054336068}
-  m_Layer: 0
-  m_Name: Main Camera
-  m_TagString: MainCamera
->>>>>>> origin/Local-Changes
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
-<<<<<<< HEAD
---- !u!1 &1000011186313560
-=======
---- !u!1 &1000012070797548
->>>>>>> origin/Local-Changes
+--- !u!1 &1000012537965284
 GameObject:
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   serializedVersion: 4
   m_Component:
-<<<<<<< HEAD
-  - 4: {fileID: 4000010000676492}
-  - 20: {fileID: 20000014102293574}
-  - 92: {fileID: 92000012572145628}
-  - 124: {fileID: 124000011238030396}
-  - 81: {fileID: 81000010978354014}
+  - 4: {fileID: 4000010150453748}
+  - 20: {fileID: 20000011736208350}
+  - 92: {fileID: 92000011626724260}
+  - 124: {fileID: 124000013144936716}
+  - 81: {fileID: 81000010401825838}
   m_Layer: 0
   m_Name: Main Camera
   m_TagString: MainCamera
-=======
-  - 4: {fileID: 4000011577062226}
-  - 114: {fileID: 114000012648774372}
-  m_Layer: 0
-  m_Name: Camera movement
-  m_TagString: Untagged
->>>>>>> origin/Local-Changes
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
-<<<<<<< HEAD
---- !u!4 &4000010000676492
-=======
---- !u!4 &4000011505123966
->>>>>>> origin/Local-Changes
+--- !u!4 &4000010150453748
 Transform:
   m_ObjectHideFlags: 1
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
-<<<<<<< HEAD
-  m_GameObject: {fileID: 1000011186313560}
-=======
-  m_GameObject: {fileID: 1000010703697940}
->>>>>>> origin/Local-Changes
+  m_GameObject: {fileID: 1000012537965284}
   m_LocalRotation: {x: 0.1308235, y: -0, z: -0, w: 0.9914057}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_LocalEulerAnglesHint: {x: 14.981001, y: 0, z: 0}
   m_Children: []
-<<<<<<< HEAD
-  m_Father: {fileID: 4000010105433428}
+  m_Father: {fileID: 4000013301569044}
   m_RootOrder: 0
---- !u!4 &4000010105433428
-=======
-  m_Father: {fileID: 4000011577062226}
-  m_RootOrder: 0
---- !u!4 &4000011577062226
->>>>>>> origin/Local-Changes
+--- !u!4 &4000013301569044
 Transform:
   m_ObjectHideFlags: 1
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
-<<<<<<< HEAD
-  m_GameObject: {fileID: 1000010836614308}
-=======
-  m_GameObject: {fileID: 1000012070797548}
->>>>>>> origin/Local-Changes
+  m_GameObject: {fileID: 1000011715517220}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 5.15, y: 5.74, z: 0.09}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_Children:
-<<<<<<< HEAD
-  - {fileID: 4000010000676492}
+  - {fileID: 4000010150453748}
   m_Father: {fileID: 0}
   m_RootOrder: 0
---- !u!20 &20000014102293574
-=======
-  - {fileID: 4000011505123966}
-  m_Father: {fileID: 0}
-  m_RootOrder: 0
---- !u!20 &20000012920185382
->>>>>>> origin/Local-Changes
+--- !u!20 &20000011736208350
 Camera:
   m_ObjectHideFlags: 1
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
-<<<<<<< HEAD
-  m_GameObject: {fileID: 1000011186313560}
-=======
-  m_GameObject: {fileID: 1000010703697940}
->>>>>>> origin/Local-Changes
+  m_GameObject: {fileID: 1000012537965284}
   m_Enabled: 1
   serializedVersion: 2
   m_ClearFlags: 1
@@ -165,64 +107,36 @@ Camera:
   m_StereoConvergence: 10
   m_StereoSeparation: 0.022
   m_StereoMirrorMode: 0
-<<<<<<< HEAD
---- !u!81 &81000010978354014
-=======
---- !u!81 &81000012054336068
->>>>>>> origin/Local-Changes
+--- !u!81 &81000010401825838
 AudioListener:
   m_ObjectHideFlags: 1
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
-<<<<<<< HEAD
-  m_GameObject: {fileID: 1000011186313560}
+  m_GameObject: {fileID: 1000012537965284}
   m_Enabled: 1
---- !u!92 &92000012572145628
-=======
-  m_GameObject: {fileID: 1000010703697940}
-  m_Enabled: 1
---- !u!92 &92000011028097960
->>>>>>> origin/Local-Changes
+--- !u!92 &92000011626724260
 Behaviour:
   m_ObjectHideFlags: 1
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
-<<<<<<< HEAD
-  m_GameObject: {fileID: 1000011186313560}
+  m_GameObject: {fileID: 1000012537965284}
   m_Enabled: 1
---- !u!114 &114000012194908948
-=======
-  m_GameObject: {fileID: 1000010703697940}
-  m_Enabled: 1
---- !u!114 &114000012648774372
->>>>>>> origin/Local-Changes
+--- !u!114 &114000012020936646
 MonoBehaviour:
   m_ObjectHideFlags: 1
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
-<<<<<<< HEAD
-  m_GameObject: {fileID: 1000010836614308}
-=======
-  m_GameObject: {fileID: 1000012070797548}
->>>>>>> origin/Local-Changes
+  m_GameObject: {fileID: 1000011715517220}
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: bc5f5f3166a5d964b82148035eaf8940, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   camSpeed: 0.2
-<<<<<<< HEAD
---- !u!124 &124000011238030396
-=======
---- !u!124 &124000012225032920
->>>>>>> origin/Local-Changes
+--- !u!124 &124000013144936716
 Behaviour:
   m_ObjectHideFlags: 1
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
-<<<<<<< HEAD
-  m_GameObject: {fileID: 1000011186313560}
-=======
-  m_GameObject: {fileID: 1000010703697940}
->>>>>>> origin/Local-Changes
+  m_GameObject: {fileID: 1000012537965284}
   m_Enabled: 1
