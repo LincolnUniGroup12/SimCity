@@ -29,6 +29,7 @@ public class cityStats : MonoBehaviour {
 	public float overallIncomeTax;
 	public float overallExpenses;
 
+	public GameObject budgetpanel;
 
 
 
@@ -58,5 +59,13 @@ public class cityStats : MonoBehaviour {
 	public void ChangeEducationRate() {
 		educationSpending = educationSlider.GetComponent<Slider>().value;
 		educationlevel.GetComponent<Text> ().text = "£" + educationSpending;
+	}
+
+	public void OpenBudget() {
+		budgetpanel.SetActive(true);
+	}
+
+	public void CloseBudget() {
+		budgetpanel.SetActive(false);
 	}
 }
