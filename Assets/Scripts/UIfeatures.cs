@@ -1,11 +1,14 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class UIfeatures : MonoBehaviour {
 
 
 	public GameObject play;
+	public GameObject playtext;
+	public GameObject date;
 	public GameObject ff;
 	public GameObject slow;
 
@@ -19,7 +22,7 @@ public class UIfeatures : MonoBehaviour {
 
 
 	void Start () {
-		
+		Time.timeScale = 0.33f;
 	}
 	
 
@@ -27,7 +30,7 @@ public class UIfeatures : MonoBehaviour {
 		dayFloat += Time.deltaTime;
 		day = (int)dayFloat;
 
-
+		date.GetComponent<Text> ().text = "Date: " + day + "/" + month + "/" + year;
 
 		if (month == 2) {
 			if (day == 28) {
@@ -53,12 +56,18 @@ public class UIfeatures : MonoBehaviour {
 	public void Playpause() {
 		if (paused) {
 
-			Time.timeScale = 1f;
+			Time.timeScale = 0.33f;
 			paused = false;
+			playtext.GetComponent<Text> ().text = "Pause";
 		} else {
 
 			Time.timeScale = 0f;
 			paused = true;
+			playtext.GetComponent<Text> ().text = "Play";
 		}
+	}
+
+	public void ff1() {
+
 	}
 }
