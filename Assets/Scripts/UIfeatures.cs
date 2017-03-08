@@ -22,7 +22,7 @@ public class UIfeatures : MonoBehaviour {
 
 
 	void Start () {
-		Time.timeScale = 0.33f;
+		
 	}
 	
 
@@ -66,7 +66,7 @@ public class UIfeatures : MonoBehaviour {
 	public void Playpause() {
 		if (paused) {
 
-			Time.timeScale = 0.33f;
+			Time.timeScale = 1f;
 			paused = false;
 			playtext.GetComponent<Text> ().text = "Pause";
 		} else {
@@ -78,7 +78,7 @@ public class UIfeatures : MonoBehaviour {
 	}
 
 	public void ff1() {
-		Time.timeScale = 0.66f;
+		Time.timeScale = 3f;
 	}
 
 	public void ff2() {
