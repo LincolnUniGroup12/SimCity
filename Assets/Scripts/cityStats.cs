@@ -33,6 +33,13 @@ public class cityStats : MonoBehaviour {
 
 
 
+	void Start() {
+		taxRate = 10;
+		educationSpending = 100;
+		healthcareSpending = 100;
+	}
+
+
 	void Update() {
 		percEmployed = availableJobs / population;
 		workingPopulation = population * percEmployed;
