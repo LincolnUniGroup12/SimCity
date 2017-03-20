@@ -9,7 +9,13 @@ public class event_control : MonoBehaviour {
     {
         start_build(building_types.factory);
     }
-
+    void Update()
+    {
+        if (Input.GetKey(KeyCode.I))
+        {
+            start_build(building_types.apartment);
+        }
+    }
 
     public void DidClickBuildButton()
     {
@@ -24,7 +30,7 @@ public class event_control : MonoBehaviour {
             GameObject tempPre = null;
             //	判断建筑物类型
             switch (t)
-            {
+            {                                                          
                 case building_types.factory:
                     //	建造兵营
                     tempPre = factoryPre;
