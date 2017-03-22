@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using UnityEditor;
 using UnityEngine;
 
-[CustomEditor(typeof(TileMap))]
+[CustomEditor(typeof(tileMap))]
 public class TileMapInspector : Editor {
 
     public override void OnInspectorGUI()
@@ -13,7 +13,7 @@ public class TileMapInspector : Editor {
 
         if (GUILayout.Button("Regenerate"))
         {
-            TileMap tileMap = (TileMap)target;
+            tileMap tileMap = (tileMap)target;
             tileMap.BuildMesh();
         } 
     }

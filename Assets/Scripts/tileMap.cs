@@ -2,12 +2,12 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-[ExecuteInEditMode]
+
 [RequireComponent(typeof(MeshFilter))]
 [RequireComponent(typeof(MeshRenderer))]
 [RequireComponent(typeof(MeshCollider))]
 
-public class TileMap : MonoBehaviour {
+public class tileMap : MonoBehaviour {
     //number of tiles to create and their size
     public int size_x = 100;
     public int size_z = 50;

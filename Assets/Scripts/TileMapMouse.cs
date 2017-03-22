@@ -2,17 +2,17 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-[RequireComponent(typeof(TileMap))]
+[RequireComponent(typeof(tileMap))]
 public class TileMapMouse : MonoBehaviour {
 
-    TileMap _tileMap;
+    tileMap _tileMap;
 
     Vector3 currentTileCoord;
 
     public Transform selectionCube;
     void Start()
     {
-        _tileMap = GetComponent<TileMap>();
+        _tileMap = GetComponent<tileMap>();
     }
 	// Update is called once per frame
 	void Update () {
