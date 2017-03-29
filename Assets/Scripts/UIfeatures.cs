@@ -12,6 +12,20 @@ public class UIfeatures : MonoBehaviour {
 	public GameObject ff;
 	public GameObject slow;
 
+	public GameObject budgetUI;
+	public GameObject statsUI;
+	public GameObject citizenUI;
+
+	public GameObject residentialButton;
+	public GameObject commercialButton;
+	public GameObject industrialButton;
+	public bool zonesShowing = false;
+
+	public GameObject schoolButton;
+	public GameObject policeButton;
+	public GameObject hospitalButton;
+	public bool buildingsShowing = false;
+
 	public float dayFloat;
 	public int day = 1;
 	public int month = 1;
@@ -85,4 +99,66 @@ public class UIfeatures : MonoBehaviour {
 		Time.timeScale = 15f;
 	}
 
+	public void OpenBudget() {
+		budgetUI.SetActive (true);
+		citizenUI.SetActive (false);
+		statsUI.SetActive (false);
+	}
+
+	public void OpenStats() {
+		budgetUI.SetActive (false);
+		citizenUI.SetActive (false);
+		statsUI.SetActive (true);
+	}
+
+	public void OpenCitizens() {
+		budgetUI.SetActive (false);
+		citizenUI.SetActive (true);
+		statsUI.SetActive (false);
+	}
+
+	public void OpenZones() {
+		if (zonesShowing == false) {
+			residentialButton.SetActive (true);
+			commercialButton.SetActive (true);
+			industrialButton.SetActive (true);
+			policeButton.SetActive (false);
+			schoolButton.SetActive (false);
+			hospitalButton.SetActive (false);
+			buildingsShowing = false;
+			zonesShowing = true;
+		} else {
+			residentialButton.SetActive (false);
+			commercialButton.SetActive (false);
+			industrialButton.SetActive (false);
+			zonesShowing = false;
+			policeButton.SetActive (false);
+			schoolButton.SetActive (false);
+			hospitalButton.SetActive (false);
+			buildingsShowing = false;
+		}
+	}
+
+
+	public void OpenBuildings() {
+		if (buildingsShowing == false) {
+			policeButton.SetActive (true);
+			schoolButton.SetActive (true);
+			hospitalButton.SetActive (true);
+			buildingsShowing = true;
+			residentialButton.SetActive (false);
+			commercialButton.SetActive (false);
+			industrialButton.SetActive (false);
+			zonesShowing = false;
+		} else {
+			policeButton.SetActive (false);
+			schoolButton.SetActive (false);
+			hospitalButton.SetActive (false);
+			buildingsShowing = false;
+			residentialButton.SetActive (false);
+			commercialButton.SetActive (false);
+			industrialButton.SetActive (false);
+			zonesShowing = false;
+		}
+	}
 }
