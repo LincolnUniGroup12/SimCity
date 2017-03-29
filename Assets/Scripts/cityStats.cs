@@ -13,6 +13,8 @@ public class cityStats : MonoBehaviour {
 	public float taxRate = 0;
 	public float healthcareSpending = 0;
 	public float educationSpending = 0;
+	public float happiness = 50;
+
 
 	public GameObject taxSlider;
 	public GameObject taxlevel;
@@ -20,6 +22,7 @@ public class cityStats : MonoBehaviour {
 	public GameObject healthlevel;
 	public GameObject educationSlider;
 	public GameObject educationlevel;
+
 
 	public GameObject overallProfit;
 	public float profit = 0;
@@ -30,6 +33,10 @@ public class cityStats : MonoBehaviour {
 	public float overallExpenses;
 
 	public GameObject budgetpanel;
+
+	public GameObject happinessUI;
+	public GameObject popUI;
+	public GameObject emprateUI;
 
 
 
@@ -49,6 +56,11 @@ public class cityStats : MonoBehaviour {
 		profit = overallIncomeTax - overallExpenses;
 
 		overallProfit.GetComponent<Text> ().text = "£" + profit;
+
+		happinessUI.GetComponent<Text> ().text = "Happiness: " + happiness; 
+		popUI.GetComponent<Text> ().text = "Population: " + population; 
+		emprateUI.GetComponent<Text> ().text = "Employment Rate: " + percEmployed; 
+
 	}
 
 

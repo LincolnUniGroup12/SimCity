@@ -16,10 +16,11 @@ GameObject:
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
-  serializedVersion: 4
+  serializedVersion: 5
   m_Component:
-  - 4: {fileID: 4000014052689874}
-  - 114: {fileID: 114000010488878360}
+  - component: {fileID: 4000014052689874}
+  - component: {fileID: 114000010488878360}
+  - component: {fileID: 114692950026651434}
   m_Layer: 0
   m_Name: _Scripts
   m_TagString: Untagged
@@ -36,10 +37,10 @@ Transform:
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: -3.4876995, y: -0.028717995, z: 4.4788427}
   m_LocalScale: {x: 1, y: 1, z: 1}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &114000010488878360
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -53,10 +54,11 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   population: 1000
   availableJobs: 700
-  averageIncome: 20000
-  taxRate: 0
-  healthcareSpending: 0
-  educationSpending: 0
+  averageIncome: 200
+  taxRate: 10
+  healthcareSpending: 100
+  educationSpending: 100
+  happiness: 50
   taxSlider: {fileID: 0}
   taxlevel: {fileID: 0}
   healthSlider: {fileID: 0}
@@ -70,3 +72,28 @@ MonoBehaviour:
   overallIncome: 0
   overallIncomeTax: 0
   overallExpenses: 0
+  budgetpanel: {fileID: 0}
+  happinessUI: {fileID: 0}
+  popUI: {fileID: 0}
+  emprateUI: {fileID: 0}
+--- !u!114 &114692950026651434
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1000012688196020}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 46b3bb08a0e228548b87768be64b5dbf, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  play: {fileID: 0}
+  playtext: {fileID: 0}
+  date: {fileID: 0}
+  ff: {fileID: 0}
+  slow: {fileID: 0}
+  dayFloat: 0
+  day: 1
+  month: 1
+  year: 2000
+  paused: 0
