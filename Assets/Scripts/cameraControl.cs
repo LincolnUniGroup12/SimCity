@@ -7,6 +7,8 @@ public class cameraControl : MonoBehaviour {
 	public float camSpeed = 0.2f;                    //Speed for camera movements
 	                                                 //Feel free to add a second variable for zooming speed if needed
 
+
+
 	void Update () {
 
 		if(Input.GetKey(KeyCode.W)) {
@@ -34,6 +36,11 @@ public class cameraControl : MonoBehaviour {
 		{
 			transform.Translate(Vector3.down * camSpeed);
 		}
+
+
+
+
+	
 
 	}
 }
