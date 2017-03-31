@@ -11,15 +11,7 @@ public class cameraControl : MonoBehaviour {
 	void Update () {
         RotateCamera();
         mov_camera();
-        if (Input.GetAxis("Mouse ScrollWheel") < 0)               // Scrolling down zooms out
-
-		{
-			transform.Translate(Vector3.up * 0.4f);
-		}
-		if (Input.GetAxis("Mouse ScrollWheel") > 0)               // Scrolling up zooms in
-		{
-			transform.Translate(Vector3.down * 0.4f);
-		}
+		ScaleCamera ();
 
 	}
     void mov_camera()
@@ -81,5 +73,18 @@ public class cameraControl : MonoBehaviour {
             lastMousePos = currentMousePos;
         }
     }
+	private void ScaleCamera () {
+		//	获取鼠标滚轮滚动
+		float mouseScr = Input.GetAxis ("Mouse ScrollWheel");
+		//	如果滚动了滚轮
+		if (mouseScr != 0f) {
+			//	获取滚动方向
+			mouseScr = mouseScr > 0 ? 1f : -1f;
+
+			//	移动摄像机
+			transform.position += transform.forward * Time.deltaTime * camSpeed * mouseScr;
+
+		}
+	}
 
 }
