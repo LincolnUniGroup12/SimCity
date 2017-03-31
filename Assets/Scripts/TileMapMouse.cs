@@ -6,6 +6,7 @@ using UnityEngine;
 public class TileMapMouse : MonoBehaviour {
 
     tileMap _tileMap;
+    public GameObject Cube;
 
     Vector3 currentTileCoord;
 
@@ -37,6 +38,8 @@ public class TileMapMouse : MonoBehaviour {
         if (Input.GetMouseButtonDown(0))
         {
             Debug.Log("Click!");
+            Debug.Log("Tile: " + currentTileCoord.x + "," + currentTileCoord.z);
+            Instantiate(Cube, new Vector3(currentTileCoord.x + 0.5f, 0.0f, currentTileCoord.z + 0.5f), Quaternion.identity);
         }
 	}
 }
