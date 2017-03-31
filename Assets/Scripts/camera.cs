@@ -3,11 +3,13 @@ using System.Collections;
 //	摄像机移动方向
 public class camera : MonoBehaviour 
 {
-	public float x, y;
+	public float x = 0, y = 0;
 	public GameObject camera_control;	//	当前目标
 	public float move_speed,rotate_speed,scale_speed;	//	camera parameter
 	private int wide, heigh; //monitor size
 	private bool click_right_mouse = false;	
+
+
 
 	void initialization () 
 	{
@@ -26,14 +28,7 @@ public class camera : MonoBehaviour
 	}
 	private void RotateCamera () 
 	{
-		Quaternion rotation_euler;
-		if (Input.GetMouseButtonDown(1))
-		{
-			x += Input.GetAxis ("Mouse X") * rotate_speed * Time.deltaTime;
-			y -= Input.GetAxis ("Mouse Y") * rotate_speed * Time.deltaTime;
-			rotation_euler = Quaternion.Euler (y, x, 0);
-			transform.rotation = rotation_euler;
-		}
+
 	}
 		
 	private void ScaleCamera () 
